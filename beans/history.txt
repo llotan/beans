@@ -1,0 +1,55 @@
+﻿- added morpho param intensivity, changed filters red,  blue, green, yellow
+- merged n contours to 1 in process detect beans
+2019.09.19 got beta ver device with short chanel, tested, found best timespan between detect and blow bean
+2019.09.1x got beta ver device with long chanel, tested, found best timespan between detect and blow bean
+
+2019.09.12 adjustmented cameras, valves. Tested theim
+2019.09.11 got alfa ver device, tested work with PLC
+- improved GUI
+
+2019.09.04 
+- fixed error in saving data of experement
+- linked  blobs from two cameras in runtime
+- prepare report for two  cameras
+- prepared data for develope reports
+- debuged & checked standart report 
+- impoved measure module (crated object model, tested  it on standart report )
+
+2019.08.20
+- created standart report (based on morpho filter)
+- added filters (morpho parameters on OpenCV):
+   - elogation (eccentricity)
+   - convexity - area, perimetr
+   - roundness
+   - Rmax, Rmin, Rmax-Rmin
+   - orientation & max/min axis
+- added form "Morpho fiter"
+
+2019.08.06
+- combine all  modules in program
+- made installation and auto update from micropik.org
+- get PLC from Chereck - wrote driver work with this PLC, made depended changed in program ( PLC manage 24 valves )
+
+- made changed in program depend new control box(managed light, vibro table)
+- developed module save result of experiment  to xml
+- moved parameters of program to config and added form for changed them, for user
+
+2019.07.20
+- Created procedure detect one bean from two cameras.
+- Developed module attach / deattach  any filter(morphoparameters) to detection process.
+- Made filters(morphoparameters): red,area,perimeter, Rmin, moment of blob,  convexity.
+- Developed component for showing process of detection beans.
+- Detect channel  of bean for turn on valve (one from 9
+
+2019.06.12
+- Remade project   for one camera
+- Adjusted project for Morphious V1 (add manage light, breathe,  vibration table)
+- Move project  from opencv 2 to opencv3 (for move calc from CPU to GPU)
+
+2019.05.10
+- Created algorithm detect red beans,       using opencv2. 
+- Created algorithm merge bean from  lines
+- Tested and adjusted project on first setup with two cameras .
+
+2019.04.06
+- Wrote driver  for mater-slave  work of cameras
